@@ -1,0 +1,28 @@
+.secendview {
+        
+    
+    padding: 50px;
+    margin-top: 60px;
+};
+
+
+@media only screen and (max-width: 600px) {
+    .secendview {
+        
+        margin-left: 0px;
+        padding: 0px;
+        margin-top: 0px;
+    };
+    .againsecend{
+        padding:20px;
+       
+    
+    }
+
+   
+    
+  }
+
+
+ 
+ 

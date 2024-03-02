@@ -1,0 +1,282 @@
+[{
+    "id": 1,
+    "company_description": "(Echologyx) Awesome culture- Passionate,driven and fun team trainning and career development. We work with fortune 500 companies on a daily basis to provide the best personalization,development and testing,design and QA support",
+
+    "your_role": "We are looking for a UI/UX Designer to turn our Website/software into easy-to-use products for our clients",
+
+    "job_tital": "UI/UX Designer",
+
+    "skill" :"adobe dx, Figma, InVision, Sketch ",
+
+    "job_type": "internship",
+
+    "office_time": "mon-fri : 9.00am to 6.00pm",
+    
+
+    "email": "jobs@echologyx.com",
+    "vacancies": 2,
+    "city": "Dhaka(Uttara)",
+    "datetime": "29/08/2021",
+    "money": "TK.40000-70000(Monthly)",
+    "companyname": "Echologyx"
+  },{
+    "id": 2,
+    "company_description": "(eGeneration Limited)eGeneration is a leading management consulting, technology services and outsourcing company in Bangladesh. The company is working both in local and international market for IT consultancy, information security and advisory services since 2003.",
+
+    "your_role": "Writes SQL Query, scripts, functions for a database system with PostgreSQL.Basic database administrative tasks (backup, restore, installation) for numerous types of databases.Provides Maintenance Support for the existing database to ensure smooth operation.Maintains standard documentation of the Database.",
+
+    "job_tital": "Junior database developer",
+
+    "skill" :"MySQL, PostgreSQL",
+
+    "job type": "internship",
+
+    "office_time": "mon-fri : 9.00am to 6.00pm",
+    "you_have": [
+        {"basic": "basic knowladge about Mysql"},
+        {"must": "must knowladge about Database"},
+        {"familiarity":"quiries,function,linux environment"}
+    ],
+
+
+    "email": "job@egneration.come",
+    "vacancies":"Not specific",
+    "city": "Dhaka(Gulshan-1)",
+    "datetime": "8/8/2021",
+    "money": "Negotiable",
+    "companyname": "eGeneration Limited"
+  }, {
+    "id": 3,
+    "company_description": "NeoSOFT is a SEI-CMMI Level 5 and ISO 9001:2008 certified global IT consulting & software solutions provider with 3000+ software consultants working full time across 8 delivery centers. Established in 1996, NeoSOFT is headquartered in Mumbai, India with offices in USA, UK, Dubai, Italy, Germany, Japan & Australia. Our commitment to quality and 24+ years of experience has made us serve over 1500+ clients across 50+ countries with 85% client retention.Our objective is to deliver robust, scalable, innovative and quality solutions while adhering to strict deadlines, for small-medium businesses as well as Fortune 500 Companies.",
+
+    "your_role": "We are looking for skilled Front End, Back End and Full Stack Developer.As Frond End Developer, we are looking for skilled JavaScript developers who are proficient with React.js. As Back End Developer, we are looking for qualified developers who will be responsible either to develop a new website or maintain an old website built in NodeJS/MEAN/MERN technology stack. Knowledge of Node.js and frameworks such as Express.js, Sails.js, Socket.io, Strong Loop, Meteor.js, Koa.js, Hapi.js, React.js & Angular is a must.",
+
+    "job_tital": "Software Engineer(Front end/Back end/Full stack Developer)",
+
+    "skill" :" Bootstrap, CentOS, React | NodeJS | mongoDB | mongoose | JavaScript | Github | Git, React Native | NodeJS | HTML | CSS | JavaScript | Github | Git, Redux, ubuntu",
+
+    "job type": "internship",
+
+    "office_time": "mon-fri : 9.00am to 6.00pm",
+    "you_have": [
+        {"basic": "Bootstrap, , JavaScript framework, jQuery, Mongo DB, MySQL, NodeJS, React and React Native, REST API, Swift Tools: Git"},
+        {"must": "HTML & CSS"},
+        {"familiarity":"js framework"}
+    ],
+
+
+    "email": "nazifarecruitmentbd@gmail.com",
+    "vacancies": "Not specific",
+    "city": "Dhaka(Motijhil)",
+    "datetime": "31/8/2021",
+    "money": "Negotiable",
+    "companyname": "NeoSOFT TECHNOLOGIES"
+  }, {
+    "id": 4,
+    "company_description": " Evercare Hospital Dhaka (EHD) is the only JCI-Accredited, 425-bed multi-disciplinary super-specialty tertiary care hospital in Bangladesh, a market with more than 160 million citizens. EHD provides comprehensive health care with state-of-the-art medical, surgical and diagnostic facilities and expert medical professionals, skilled nurses and technologists.",
+
+    "your_role": "The Analyst Programmer will be part of an agile development team, building and working on enterprise grade software systems on top of the Microsoft .NET development stack. The Analyst Programmer will also provide technical and team leadership through coaching and mentorship.",
+
+    "job_tital": "Analyst Programmer",
+
+    "skill" :"Microsoft .NET Platform, Oracle, Java, Python,RDMBS Oracle, MSSQL, MYSQL",
+
+    "job type": "internship",
+
+    "office_time": "mon-fri : 9.00am to 6.00pm",
+    "you_have": [
+        {"basic": "Oracle Mysql"},
+        {"must": "Java,Python"},
+        {"familiarity":" OOP, service-oriented application development techniques and theories"}
+    ],
+
+
+    "email": "recruit@evercarebd.com",
+    "vacancies": 1,
+    "city": "Dhaka(Bashundhara R/A)",
+    "datetime": "31/8/2021",
+    "money": "Negotiable",
+    "companyname": "Evercare"
+  }, {
+    "id": 5,
+    "company_description": " BRAC IT is a proud member of the eminent BRAC family and is one of the leading IT solution & service providers in Bangladesh specializing in providing a wide range of software solutions & end to end technology service management.",
+
+    "your_role": "Developing reporting systems that provide accessible information for decision-making.Using warehouse data to generate reports to support business decision-making and business performance monitoring.Maintaining data analytics platforms.Evaluating and improving existing BI systems.Conducting troubleshooting on BI models.Generating and delivering quality reports to customers and performing quality assurance checks on reports.",
+
+    "job_tital": "BI Developer(pL/SQL)",
+
+    "skill" :"Business intelligence, Oracle PLSQL",
+
+    "job type": "internship",
+
+    "office_time": "mon-fri : 9.00am to 6.00pm",
+    "you_have": [
+        {"basic": "SQL"},
+        {"must": "participation in Data warehouse design"},
+        {"familiarity":"Oracle PLSQL"}
+    ],
+
+
+    "email": "career@bracits.com",
+    "vacancies": 2,
+    "city": "Dhaka(Niketon,Gulshan)",
+    "datetime": "8/8/2021",
+    "money": "Negotiable",
+    "companyname": "BRAC IT Services Limited"
+  }, {
+    "id": 6,
+    "company_description": "WAN IT Limited is a professional web design company providing web development solutions for corporate or individuals interested in outsourcing their web design and web application development needs. Also specializing in CCTV Security, Attendance System and others automation equipment?s supplying and servicing clients of all over Bangladesh.",
+
+    "your_role": "Ability to design international standard websites PSD design, LOGO design and basic image processing using Photoshop and Illustrator.Must have 2+ year hands on experience in JavaScript, AJAX, JQuery client side script development as well as HTML5, CSS & Bootstrap.Graphic Design using Adobe Photoshop and Illustrator and other components of Adobe Creative suite Having creative vision, user experience, visual communication, and quality design conceptsDesigning engaging and responsive landing pages Liaising with back-end developers to ensure web is properly integrated Ensuring website function and stability across devices i.e. desktop, mobile, tablet Providing internal support and external customer service throughout the build and launch process of the website Excellent visual design skills with sensitivity to user-system interaction Up-to-date with the latest Web trends, techniques and technologies Converting requirement into proper UI under a clean and maintainable HTML/CSS design.Developing concepts, graphics and layouts for brochures, web pages,company logos, web banners, ads and any other web related designs.",
+
+    "job_tital": "Front End Designer/ Web Designer",
+
+    "skill" :"UX/UI design,Graphics design,Adobe photoshop,illustrator etc",
+
+    "job type": "internship",
+
+    "office_time": "mon-fri : 9.00am to 6.00pm",
+    "you_have": [
+        {"basic": "photoshop"},
+        {"must": "Basic graphics design"},
+        {"familiarity":"UX/UI design"}
+    ],
+
+
+    "email": "jobs@wanitltd.com",
+    "vacancies": 2,
+    "city": "Dhaka(Moghbazar)",
+    "datetime": "30/8/2021",
+    "money": "Negotiable",
+    "companyname": "Want IT"
+  }, {
+    "id": 7,
+    "company_description": "EATL is a leading software development and ICT company working with the government/ autonomous bodies, private organizations, NGOs, donors and some world most renowned IT expertise organizations.",
+
+    "your_role": "Hands on experience in Java Application Development (Spring Boot) Experience in applying spring components: MVC, Security, Cloud, JPA, Hibernate, WebFlux Good understanding of micro-service architecture, Docker/Kubernetes and CI/CD Understanding on Web technology and REST API Knowledge in JavaScript, Angular/React, HTML, CSS is preferred. Familiar with Microsoft SQL Server/Oracle database Experience in conducting Unit TestVery good problem-solving capability, knowledge in software design patterns and principles client communication and technical lead a small/medium team.Familiarity with Agile (Scrum) process and project management tools like JIRA and OpenProject. Solid understanding of using versioning tools, e.g. Git.",
+
+    "job_tital": "Java(Spring Boot)Developer",
+
+    "skill" :"experience in software development using Java (Spring Boot).",
+
+    "job type": "internship",
+
+    "office_time": "mon-fri : 9.00am to 6.00pm",
+    "you_have": [
+        {"basic": "programmimg"},
+        {"must": "Java"},
+        {"familiarity":"Java(spring boot)"}
+    ],
+
+
+    "email": "hr@eatlbd.com",
+    "vacancies": 2,
+    "city": "Dhaka(Gulshan-1)",
+    "datetime": "31/8/2021",
+    "money": "Attractive salary  and  excellent working environment .",
+    "companyname": "Ethics Advanced Technology Ltd. (EATL)"
+  }, {
+    "id": 8,
+    "company_description": "Iqrasys Solutions Ltd has been providing technology solutions to solve specific business problems. We specialize in providing customized solutions to our customers based on their specific business needs. We have specialized team having expertise in Web Applications development and business software solutions such as CRM, ERP, HRM, Accounting solutions etc. We help you boost your business through our ready software solutions.",
+
+    "your_role": "Developing C# .NET solutions for the organization.Creating in-house applications using the .NET framework.Debugging and maintaining written code.Reporting and resolving issues related to .NET projects.Identifying and handling technical risks and issues.Providing technical support to stakeholders in the organization.Participating in project meetings with management and other team members.",
+
+    "job_tital": "Software Engineer(C#.Net)",
+
+    "skill" :".Net, .Net Core, JavaScript, jquary, MSSQL",
+
+    "job type": "internship",
+
+    "office_time": "mon-fri : 9.00am to 6.00pm",
+    "you_have": [
+        {"basic": "SQL"},
+        {"must": ".Net,javascript,jquary"},
+        {"familiarity":"OOP"}
+    ],
+
+
+    "email": "jobcareer@iqrasys.com",
+    "vacancies": "Not specific",
+    "city": "Dhaka(Mirpur-DOHS)",
+    "datetime": "15/8/2021",
+    "money": "Negotiable according to experience and skills.",
+    "companyname": "Iqrasys Solutions Ltd."
+  }, {
+    "id": 9,
+    "company_description": "E-commerce development and marketing",
+
+    "your_role": "Focus on delivering value from agency resource partners using select technology solutions Support agency resource owners and product owners to ensure company solution meets a specific need Engage with agency resource partners to find solutions for improvements in processes and technology solutions Support the implementation of cooperate solutions and non-cooperate ones Support analyzing build vs buying a solution when our business need arises Provide early life support for newly implemented solutions including but not limited to the field Act as the 2nd line of support resource for technical issues in technological tools/solutions used by program and operations Consult with peers and management on the newest technology and its implications to program and operational activities Train end-users on delivered tools to ensure knowledge handover to relevant business teams Prepare project documentation such as user guides and flowchart Evaluate, test, and recommend new opportunities for enhancing technology solutions in Company Demonstrated progress on delivery of corporate solutions with tracking of activities as per Company roadmap Data visualization and reports.",
+
+    "job_tital": "Software Engineer",
+
+    "skill" :"Web Development,Webapp",
+
+    "job type": "internship",
+
+    "office_time": "mon-fri : 9.00am to 6.00pm",
+    "you_have": [
+        {"basic": "PHP,javascript"},
+        {"must": "HTML,CSS"},
+        {"familiarity":"mobile apps development"}
+    ],
+
+
+    "email": "hrm@curetechbd.com",
+    "vacancies": 1,
+    "city": "Dhaka(wirlessgate,Mohakhali)",
+    "datetime": "06/8/2021",
+    "money": "TK.35000-50000(Monthly)",
+    "companyname": "curetech"
+  }, {
+    "id": 10,
+    "company_description": "A leading Telecommunication company",
+
+    "your_role": "Network certification and related training on SBC and soft switch.Must be customer service oriented and believe in teamwork collaboration adaptability and initiative.Strong understanding of SIP, SS7, TDM technology, IP Network.Good knowledge of distributed server applications and storage systemsincludingclient-server,API and web services.Able to work under pressure without time boundaries to support 24/7 network operations and maintain service uptime to optimum level.",
+
+    "job_tital": "Technical support Executive",
+
+    "skill" :"System log and trace analysis, routing configuration, Soft Switch Configuration Database backup.Report preparation, analysis and visualize ICX, IGW, IOS network performance.Comes up with innovative solutions to various networking problems and ensures that customer needs are properly defined and satisfactorily met.Coordination with customer service department for any technical issue raised by customers.",
+
+    "job type": "internship",
+
+    "office_time": "mon-fri : 9.00am to 6.00pm",
+    "you_have": [
+        {"basic": ""},
+        {"must": ""},
+        {"familiarity":""}
+    ],
+
+
+    "email": "itrecruit@gpn.com",
+    "vacancies": 5,
+    "city": "Anywhere in Bangladesh",
+    "datetime": "29/8/2021",
+    "money": "Negotiable",
+    "companyname": "A Leading Telecommunication Company"
+  }, {
+    "id": 11,
+    "company_description": " At Aiva Labs we are building the world’s best technology products. Our first product is Aiva, which is like Photoshop for Web Experiences. We have over 6000 active business users globally who use our design platform to create interactive website overlays to drive leads and sales. We’re constantly pushing cutting edge features and have been a trending application on the Shopify App Store consistently.",
+
+    "your_role": " Translation of our UI/UX design wireframes and / or text based briefs to full fledged Shopify themes. That means writing Shopify Liquid code, adding functionality to theme components through the use of storefront APIs, liquid programming, and metafields, etc. Developers need to have the ability to integrate third-party and platform supported apps in the themes or stores. Developers must have the mindset to solve complex problems through research and teamwork.",
+
+    "job_tital": "Shopify Theme Developer - Remote Position",
+
+    "skill" :" HTML CSS, JavaScript, RESTful API, scss, Shopify, shopify apps, Shopify Liquid",
+
+    "job type": "internship",
+
+    "office_time": "mon-fri : 9.00am to 6.00pm",
+    "you_have": [
+        {"basic": "Basics of shopify"},
+        {"must": "knowledge on RESTful APIs."},
+        {"familiarity":"PHP"}
+    ],
+
+
+    "email": "tanzida.faruk@aivalabs.com",
+    "vacancies": "Not Specific",
+    "city": "Anywhere in Banglasesh",
+    "datetime": "16/8/2021",
+    "money": "Negotiable",
+    "companyname": "Aiva Labs Inc"
+  }]
