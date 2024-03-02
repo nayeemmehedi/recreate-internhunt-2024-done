@@ -130,8 +130,8 @@ const SignUp = () => {
         <div className="col-lg-4 col-md-6 col-sm-12">
           <form onSubmit={handleSubmit}>
             <h1>Create an account....</h1>
-            <div class="mb-lg-3">
-              <label for="exampleInputEmail1" class="form-label">
+            <div className="mb-lg-3">
+              <label for="exampleInputEmail1" className="form-label">
                 Username
               </label>
               <input
@@ -140,16 +140,16 @@ const SignUp = () => {
                 onBlur={handleBlur}
                 placeholder="Name Please"
                 name="name"
-                class="form-control"
+                className="form-control"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
               />
-              <div id="emailHelp" class="form-text">
+              <div id="emailHelp" className="form-text">
                 Username
               </div>
             </div>
-            <div class="mb-lg-3">
-              <label for="exampleInputPassword1" class="form-label">
+            <div className="mb-lg-3">
+              <label for="exampleInputPassword1" className="form-label">
                 Email
               </label>
               <input
@@ -158,25 +158,25 @@ const SignUp = () => {
                 onBlur={handleBlur}
                 placeholder="Email Please"
                 name="email"
-                class="form-control"
+                className="form-control"
                 id="exampleInputPassword1"
               />
             </div>
-            <div class="mb-lg-3 ">
-              <label for="exampleInputPassword1" class="form-label">
+            <div className="mb-lg-3 ">
+              <label for="exampleInputPassword1" className="form-label">
                 Password
               </label>
               <input
                 required
                 type="password"
                 name="password"
-                class="form-control"
+                className="form-control"
                 id="exampleInputPassword1"
                 onBlur={handleBlur}
               />
             </div>
-            <div class="mb-lg-3 ">
-              <label for="exampleInputPassword1" class="form-label">
+            <div className="mb-lg-3 ">
+              <label for="exampleInputPassword1" className="form-label">
                 Password confirm
               </label>
 
@@ -184,7 +184,7 @@ const SignUp = () => {
                 required
                 type="password"
                 name="password_confirm"
-                class="form-control"
+                className="form-control"
                 id="exampleInputPassword1"
                 onBlur={handleBlur}
               />
@@ -193,7 +193,7 @@ const SignUp = () => {
             <input
               type="submit"
               value="Create an account"
-              class="btn btn-primary"
+              className="btn btn-primary"
             />
           </form>
           <h1 style={{ color: "red" }}>{user.error}</h1>
@@ -349,28 +349,28 @@ export default SignUp;
 //             <form onSubmit={handleSubmit}>
 
 //                 <h1>Create an account....</h1>
-//                 <div class="mb-3">
-//                     <label for="exampleInputEmail1" class="form-label">Username</label>
-//                     <input required type="text" onBlur={handleBlur} placeholder='Name Please' name='name' class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-//                     <div id="emailHelp" class="form-text">Username</div>
+//                 <div className="mb-3">
+//                     <label for="exampleInputEmail1" className="form-label">Username</label>
+//                     <input required type="text" onBlur={handleBlur} placeholder='Name Please' name='name' className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+//                     <div id="emailHelp" className="form-text">Username</div>
 //                 </div>
-//                 <div class="mb-3">
-//                     <label for="exampleInputPassword1" class="form-label">Email</label>
-//                     <input required type='email' onBlur={handleBlur} placeholder='Email Please' name='email' class="form-control" id="exampleInputPassword1" />
+//                 <div className="mb-3">
+//                     <label for="exampleInputPassword1" className="form-label">Email</label>
+//                     <input required type='email' onBlur={handleBlur} placeholder='Email Please' name='email' className="form-control" id="exampleInputPassword1" />
 //                 </div>
-//                 <div class="mb-3">
-//                     <label for="exampleInputPassword1" class="form-label">Password</label>
-//                     <input required type="password" name='password' class="form-control" id="exampleInputPassword1" onBlur={handleBlur} />
+//                 <div className="mb-3">
+//                     <label for="exampleInputPassword1" className="form-label">Password</label>
+//                     <input required type="password" name='password' className="form-control" id="exampleInputPassword1" onBlur={handleBlur} />
 //                     <span>password must be geater then 6</span>
 //                 </div>
-//                 <div class="mb-3">
-//                     <label for="exampleInputPassword1" class="form-label">Password confirm</label>
+//                 <div className="mb-3">
+//                     <label for="exampleInputPassword1" className="form-label">Password confirm</label>
 
-//                     <input required type="password" name='password_confirm' class="form-control" id="exampleInputPassword1" onBlur={handleBlur} />
+//                     <input required type="password" name='password_confirm' className="form-control" id="exampleInputPassword1" onBlur={handleBlur} />
 //                     <span>password must be geater then 6</span>
 //                 </div>
 
-//                 <input type="submit" value='Create an account' class="btn btn-primary" />
+//                 <input type="submit" value='Create an account' className="btn btn-primary" />
 
 //             </form>
 //             <h1 style={{ color: 'red' }}>{user.error}</h1>

@@ -4,7 +4,7 @@ import wave from "../wave21.svg";
 import wave1 from "../wave22.svg";
 import wave3 from "../wave23.svg";
 import wave4 from "../wave24.svg";
-import { localhost } from "../../..";
+import { localhost } from "../../../main.jsx";
 
 const Main = () => {
   const [job, setJob] = useState([]);

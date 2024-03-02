@@ -4,8 +4,8 @@ import {Link} from 'react-router-dom'
 const ThirdView = () => {
     return (
         <div className='container' style={{fontFamily: "Besley"}}>
-            <div class="row">
-                <div class="col-sm-5 text-center m-3 p-3">
+            <div className="row">
+                <div className="col-sm-5 text-center m-3 p-3">
                     <h2>
                         Learn <span style={{color:'#875040'}}>Something..</span>
                     </h2>
@@ -17,7 +17,7 @@ const ThirdView = () => {
 
 
                 </div>
-                <div class="col-sm-5 text-center m-3 p-3">
+                <div className="col-sm-5 text-center m-3 p-3">
                     <h2>
                        <span style={{color:"#e37e5f"}}> Company</span> Page
                     </h2>

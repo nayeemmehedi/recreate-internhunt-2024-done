@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
-import { localhost } from "../..";
+import { localhost } from "../../main.jsx";
 
 const ApproveCV = () => {
   const history = useHistory();
@@ -59,7 +59,7 @@ const ApproveCV = () => {
       <small>If u want to search please give email id</small>
       <input
         type="text"
-        class="form-control"
+        className="form-control"
         placeholder="email id searching.."
         onChange={(event) => {
           setalldata1(event.target.value);

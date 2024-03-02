@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { localhost } from "../..";
+import { localhost } from "../../main.jsx";
 
 const ListApprove = () => {
   let user = JSON.parse(localStorage.getItem("user"));

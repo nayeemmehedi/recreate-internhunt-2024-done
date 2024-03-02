@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import lottie from 'lottie-web';
+import notfound from "./NotFound.json"
 
 
 function NotFound() {
@@ -14,7 +15,7 @@ function NotFound() {
       renderer: 'svg', // Required
       loop: true, // Optional
       autoplay: true, // Optional
-      animationData: require('./NotFound.json'), // Name for future reference. Optional.
+      animationData: notfound, // Name for future reference. Optional.
     })
     
   

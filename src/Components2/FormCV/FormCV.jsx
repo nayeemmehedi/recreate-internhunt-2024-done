@@ -5,7 +5,7 @@ import Fakedata from "../../Component/Fakedata/Fakedata.json";
 import { useForm } from "react-hook-form";
 
 import "./FormCV.css";
-import { localhost } from "../..";
+import { localhost } from "../../main.jsx";
 
 const FormCV = () => {
   const {

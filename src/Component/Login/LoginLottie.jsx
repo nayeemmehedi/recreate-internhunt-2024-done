@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import lottie from 'lottie-web';
+import register from "./register.json"
 
 
 const LoginLottie = () => {
@@ -13,7 +14,7 @@ const LoginLottie = () => {
       renderer: 'svg', // Required
       loop: true, // Optional
       autoplay: true, // Optional
-      animationData: require('./register.json'), // Name for future reference. Optional.
+      animationData: register, // Name for future reference. Optional.
     })
     }, []);
     

@@ -17,11 +17,11 @@ const Forthc2 = () => {
 
                 <div className="col-4">
                  <Link
-                  class="nav-link active"
+                  className="nav-link active"
                   aria-current="page"
                   to="./review"
                 >
-                    <div class='d-flex justify-content-center'>
+                    <div className='d-flex justify-content-center'>
                         <div style={{ height: '70px', width: '70px',borderRadius:'10px ',boxShadow:'0 0 5px 4px #c7c6c5' }}>
 
                        <FontAwesomeIcon className='pt-2' icon={faCoffee} size="3x"  color="#632940" ></FontAwesomeIcon>
@@ -43,9 +43,9 @@ const Forthc2 = () => {
 
                 </div>
                 <div className="col-4">
-                <Link class="nav-link"  to="./home">
+                <Link className="nav-link"  to="./intern-job">
 
-                    <div class='d-flex justify-content-center'>
+                    <div className='d-flex justify-content-center'>
                         <div style={{ height: '70px', width: '70px',borderRadius:'10px ',boxShadow:'0 0 5px 4px #c7c6c5' }}>
 
                         <FontAwesomeIcon className='pt-2' icon={faBug} size="3x"  color="#5259ab"></FontAwesomeIcon>
@@ -68,8 +68,8 @@ const Forthc2 = () => {
 
                 </div>
                 <div className="col-4">
-                 <Link class="nav-link"  to="./hire">
-                    <div class='d-flex justify-content-center'>
+                 <Link className="nav-link"  to="./hire">
+                    <div className='d-flex justify-content-center'>
                         <div style={{ height: '70px', width: '70px',borderRadius:'10px ',boxShadow:'0 0 5px 4px #c7c6c5'}}>
 
                        

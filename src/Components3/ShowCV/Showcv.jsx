@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { localhost } from "../..";
+import { localhost } from "../../main.jsx";
 
 const Showcv = () => {
   const [student1, setStudent1] = useState([]);

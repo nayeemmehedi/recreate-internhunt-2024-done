@@ -10,11 +10,11 @@ import { faTelegramPlane } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
-    <div class="footer-clean">
+    <div className="footer-clean">
       <footer>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-sm-4 col-md-3 item">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-sm-4 col-md-3 item">
               <h3>Services</h3>
               <ul>
                 <li>
@@ -28,7 +28,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div class="col-sm-4 col-md-3 item">
+            <div className="col-sm-4 col-md-3 item">
               <h3>About</h3>
               <ul>
                 <li>
@@ -42,7 +42,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div class="col-sm-4 col-md-3 item">
+            <div className="col-sm-4 col-md-3 item">
               <h3>Careers</h3>
               <ul>
                 <li>
@@ -56,30 +56,30 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div class="col-lg-3 item social">
-              <a href="#" class="icon-social-facebook ">
+            <div className="col-lg-3 item social">
+              <a href="#" className="icon-social-facebook ">
                 <FontAwesomeIcon
                   icon={faFacebookF}
                   style={{ color: "white" }}
                 />{" "}
               </a>
 
-              <a href="#" class="icon-social-Linkedin">
+              <a href="#" className="icon-social-Linkedin">
                 <FontAwesomeIcon icon={faLinkedin} style={{ color: "black" }} />{" "}
               </a>
 
-              <a href="#" class="icon-social-twitter">
+              <a href="#" className="icon-social-twitter">
                 <FontAwesomeIcon icon={faTwitter} style={{ color: "white" }} />
               </a>
 
-              <a href="#" class="icon-social-telegram">
+              <a href="#" className="icon-social-telegram">
                 <FontAwesomeIcon
                   icon={faTelegramPlane}
                   style={{ color: "white" }}
                 />
               </a>
 
-              <p class="copyright">Nayeem Mehedi © 2021</p>
+              <p className="copyright">Nayeem Mehedi © 2021</p>
             </div>
           </div>
         </div>

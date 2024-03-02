@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { useParams, useHistory } from "react-router";
 
 import "./Review.css";
-import { localhost } from "../..";
+import { localhost } from "../../main.jsx";
 
 const ReviewNayeem = () => {
   const [review, setreview] = useState(true);
@@ -30,7 +30,7 @@ const ReviewNayeem = () => {
         setreview(false);
         alert("Your review successful");
 
-        history.replace("/home");
+        history.replace("/intern-job");
       });
   };
 

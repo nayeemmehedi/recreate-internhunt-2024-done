@@ -5,7 +5,7 @@ import ReactDOM from "react-dom";
 import { useForm } from "react-hook-form";
 
 import "../../FormCV/FormCV.css";
-import { localhost } from "../../..";
+import { localhost } from "../../../main.jsx";
 
 const FormCV = () => {
   const {

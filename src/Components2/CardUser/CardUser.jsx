@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { localhost } from "../..";
+import { localhost } from "../../main.jsx";
 
 const CardUser = () => {
   const [card, setcard] = useState([]);
@@ -29,7 +29,7 @@ const CardUser = () => {
 
 
   return (
-    <div style={{backgroundColor:'#454263'}} style={{height:'800px'}}>
+    <div style={{backgroundColor:'#454263',height:'800px'}} >
     
     
 

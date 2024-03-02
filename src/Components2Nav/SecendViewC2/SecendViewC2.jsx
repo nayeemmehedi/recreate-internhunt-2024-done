@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import lottie from "lottie-web";
 import "./boom.css";
+import social from  "./social.json"
 
 const SecendViewC2 = () => {
   const container = useRef(null);
@@ -12,7 +13,7 @@ const SecendViewC2 = () => {
       renderer: "svg", // Required
       loop: true, // Optional
       autoplay: true, // Optional
-      animationData: require("./social.json"), // Name for future reference. Optional.
+      animationData: social, // Name for future reference. Optional.
     });
   }, []);
   return (

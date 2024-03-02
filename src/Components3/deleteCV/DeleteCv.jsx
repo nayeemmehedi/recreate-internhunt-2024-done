@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
-import { localhost } from "../..";
+import { localhost } from "../../main.jsx";
 
 const DeleteCv = () => {
   const history = useHistory();

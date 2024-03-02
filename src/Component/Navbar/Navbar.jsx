@@ -38,9 +38,9 @@ const Navbar = () => {
     <div>
       {/* <button onClick={addallevent}>add all gmail</button> */}
 
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="/">
             <div>
               <p
                 style={{
@@ -59,7 +59,7 @@ const Navbar = () => {
             </div>
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -67,26 +67,26 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-lg-auto mb-lg-2 mb-lg-0">
-              <li class="nav-item me-5">
-                <Link class="nav-link active" aria-current="page" to="/">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav ms-lg-auto mb-lg-2 mb-lg-0">
+              <li className="nav-item me-5">
+                <Link className="nav-link active" aria-current="page" to="/">
                   Home
                 </Link>
               </li>
 
-              <li class="nav-item me-5">
-                <Link class="nav-link active" aria-current="page" to="./home">
+              <li className="nav-item me-5">
+                <Link className="nav-link active" aria-current="page" to="./intern-job">
                   Intern
                 </Link>
               </li>
 
-              <li class="nav-item me-5">
+              <li className="nav-item me-5">
                 <Link
-                  class="nav-link active"
+                  className="nav-link active"
                   aria-current="page"
                   to="./carduser"
                 >
@@ -94,36 +94,36 @@ const Navbar = () => {
                 </Link>
               </li>
 
-              <li class="nav-item me-5">
-                <Link class="nav-link active" aria-current="page" to="./review">
+              <li className="nav-item me-5">
+                <Link className="nav-link active" aria-current="page" to="./review">
                   review
                 </Link>
               </li>
-              <li class="nav-item me-5">
-                <Link class="nav-link active" aria-current="page" to="./hire">
+              <li className="nav-item me-5">
+                <Link className="nav-link active" aria-current="page" to="./hire">
                   Hire you
                 </Link>
               </li>
 
-              <li class="nav-item ">
+              <li className="nav-item ">
                 <a
-                  class="nav-link active"
+                  className="nav-link active"
                   aria-current="page"
                   href="./company/nayeem"
                 >
-                  <button class="btn btn-primary">Company</button>
+                  <button className="btn btn-primary">Company</button>
                 </a>
               </li>
-              <li class="nav-item me-5">
-                <a class="nav-link active" aria-current="page" href="./admin">
-                  <button class="btn btn-info">Admin</button>
+              <li className="nav-item me-5">
+                <a className="nav-link active" aria-current="page" href="./admin">
+                  <button className="btn btn-info">Admin</button>
                 </a>
               </li>
 
               {localStorage.getItem("user") ? (
-                <div class="dropdown">
+                <div className="dropdown">
                   <a
-                    class="btn btn-secondary dropdown-toggle"
+                    className="btn btn-secondary dropdown-toggle"
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
@@ -134,11 +134,11 @@ const Navbar = () => {
                     {(user && user.name) || user.displayName || user.email}
                   </a>
                   <ul
-                    class="dropdown-menu"
+                    className="dropdown-menu"
                     aria-labelledby="dropdownMenuButton1"
                   >
                     <li>
-                      <a class="dropdown-item" href onClick={logout}>
+                      <a className="dropdown-item" href onClick={logout}>
                         Logged Out
                       </a>
                     </li>

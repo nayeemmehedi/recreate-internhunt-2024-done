@@ -90,33 +90,33 @@ const CompanyLogin = () => {
         <form onSubmit={handleSubmit}>
           <h1> Company Login Page....</h1>
 
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">
+          <div className="mb-3">
+            <label for="exampleInputPassword1" className="form-label">
               Email
             </label>
             <input
               type="email"
               onBlur={handleBlur}
               name="email"
-              class="form-control"
+              className="form-control"
               id="exampleInputPassword1"
             />
           </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">
+          <div className="mb-3">
+            <label for="exampleInputPassword1" className="form-label">
               Password
             </label>
             <input
               type="password"
               onBlur={handleBlur}
               name="password"
-              class="form-control"
+              className="form-control"
               id="exampleInputPassword1"
             />
             <span>password must be geater then 6</span>
           </div>
 
-          <input type="submit" value="submit" class="btn btn-primary" />
+          <input type="submit" value="submit" className="btn btn-primary" />
 
           {user.error ? (
             <h3 style={{ color: "red" }}>{user.error}</h3>

@@ -6,8 +6,7 @@ import firebaseConfig from "./firebase.config";
 
 import { useHistory, useLocation } from "react-router";
 import { Link } from "react-router-dom";
-import LoginLottie from './LoginLottie'
-
+import LoginLottie from "./LoginLottie";
 
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
@@ -18,7 +17,7 @@ const Login = () => {
 
   const history = useHistory();
   const location = useLocation();
-  let { from } = location.state || { from: { pathname: "/home" } };
+  let { from } = location.state || { from: { pathname: "/intern-job" } };
 
   // manual sigin up and password start
 
@@ -112,20 +111,18 @@ const Login = () => {
   //login form manual
 
   return (
-    
     <div className="row mt-5">
       <div className="col-lg-6 col-md-12 col-sm-12">
-
-      <LoginLottie></LoginLottie>
-      
-      
-      
+        <LoginLottie></LoginLottie>
       </div>
       <div className="col-lg-6 col-md-12 col-sm-12">
-        <div className='bg-dark text-white me-lg-5'>
+        <div className="bg-dark text-white me-lg-5">
           <div>
             <p className="d-flex justify-content-end p-lg-5">
-              Don't have an account? <Link to="/signup"><span> Sign Up</span>  </Link>
+              Don't have an account?{" "}
+              <Link to="/signup">
+                <span> Sign Up</span>{" "}
+              </Link>
             </p>
           </div>
           <div className="container">
@@ -133,33 +130,33 @@ const Login = () => {
               <h3>Get started free....</h3>
               <p>No credit card required</p>
 
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">
+              <div className="mb-3">
+                <label for="exampleInputPassword1" className="form-label">
                   Email
                 </label>
                 <input
                   type="email"
                   onBlur={handleBlur}
                   name="email"
-                  class="form-control"
+                  className="form-control"
                   id="exampleInputPassword1"
                 />
               </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">
+              <div className="mb-3">
+                <label for="exampleInputPassword1" className="form-label">
                   Password
                 </label>
                 <input
                   type="password"
                   onBlur={handleBlur}
                   name="password"
-                  class="form-control"
+                  className="form-control"
                   id="exampleInputPassword1"
                 />
                 <span>password must be greater then 6</span>
               </div>
 
-              <input type="submit" value="submit" class="btn btn-primary" />
+              <input type="submit" value="submit" className="btn btn-primary" />
 
               {user.error ? (
                 <h3 style={{ color: "red" }}>{user.error}</h3>
@@ -181,21 +178,19 @@ const Login = () => {
             <div className="col-4"></div>
           </div>
 
-          <div>
-            <div class="d-grid gap-2 ">
+          <div className="">
+            <div className="d-grid gap-2 ">
               <button
-                style={{ backgroundColor: "whitesmoke" }}
                 className="btn btn-secondary btn-lg bg-dark"
                 onClick={handleGoogle}
               >
                 <i className="fab fa-google fa-2x"></i> <span> ... </span> Sign
-                Up With google
+                in with Google : <span className="text-decoration-underline text-danger"> click Here</span>
               </button>
             </div>
           </div>
         </div>
       </div>
-     
     </div>
   );
 };

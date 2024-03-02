@@ -6,19 +6,19 @@ const SecendView = () => {
   return (
     <div style={{ fontFamily: "Besley" }}>
       <div
-        class=" m-lg-5 p-lg-5 m-md-0 m-sm-0 bg-dark"
+        className=" m-lg-5 p-lg-5 m-md-0 m-sm-0 bg-dark"
         style={{ fontFamily: "Besley" }}
       >
         <h1 className="text-white m-lg-0 mb-md-5 m-sm-5">
-          Popular Intern Job Circular 
+          Popular Intern Job Circular
         </h1>
 
-        <div class="row">
-          <div class="col-lg-4 col-md-6  col-sm-12 ">
-            <div class="card  m-lg-5 m-md-0 m-sm-0 p-lg-0 p-md-0 p-sm-3  text-white manualStyle">
-              <h3 class="card-header">Software Engineering</h3>
-              <div class="card-body" style={{ borderTop: "1px solid red" }}>
-                <h5 class="card-title">
+        <div className="row">
+          <div className="col-lg-4 col-md-6  col-sm-12 ">
+            <div className="card  m-lg-5 m-md-0 m-sm-0 p-lg-0 p-md-0 p-sm-3  text-white manualStyle">
+              <h3 className="card-header">Software Engineering</h3>
+              <div className="card-body" style={{ borderTop: "1px solid red" }}>
+                <h5 className="card-title">
                   A software Intern engineer should be well-versed in
                 </h5>
                 <ul>
@@ -32,7 +32,11 @@ const SecendView = () => {
                   <li> Testing software</li>
                 </ul>
 
-                <Link to="/home">
+                <small>TOPICS COVERED : </small>
+                  Creating Custom JS Libraries 
+                  <br />
+
+                <Link to="./intern-job">
                   {" "}
                   <button className="btn btn-primary">Go Intern Page </button>
                 </Link>
@@ -40,13 +44,13 @@ const SecendView = () => {
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 col-sm-12 ">
-            <div class="card m-lg-5 m-md-0 m-sm-0  text-white manualStyle">
-              <h3 class="card-header">Web Development</h3>
+          <div className="col-md-6 col-lg-4 col-sm-12 ">
+            <div className="card m-lg-5 m-md-0 m-sm-0  text-white manualStyle">
+              <h3 className="card-header">Web Development</h3>
 
-              <div class="card-body" style={{ borderTop: "1px solid red" }}>
-                <h5 class="card-title">Our Approach To Mern</h5>
-                <p class="card-text">
+              <div className="card-body" style={{ borderTop: "1px solid red" }}>
+                <h5 className="card-title">Our Approach To Mern</h5>
+                <p className="card-text">
                   <small>TECHNOLOGIES</small>
                   <ul>
                     <li>MongoDB • Express</li>
@@ -60,7 +64,7 @@ const SecendView = () => {
                   Creating Custom JS Libraries • Building Real-time Apps • NoSQL
                   Database Design
                 </p>
-                <Link to="/home">
+                <Link to="./intern-job">
                   {" "}
                   <button className="btn btn-primary">Go Intern Page </button>
                 </Link>
@@ -68,12 +72,12 @@ const SecendView = () => {
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 col-sm-12">
-            <div class="card m-lg-5 m-md-0 m-sm-0 text-white manualStyle">
-              <h3 class="card-header">Networking </h3>
-              <div class="card-body" style={{ borderTop: "1px solid red" }}>
-                <h5 class="card-title"></h5>
-                <p class="card-text">
+          <div className="col-md-6 col-lg-4 col-sm-12">
+            <div className="card m-lg-5 m-md-0 m-sm-0 text-white manualStyle">
+              <h3 className="card-header">Networking </h3>
+              <div className="card-body" style={{ borderTop: "1px solid red" }}>
+                <h5 className="card-title"></h5>
+                <p className="card-text">
                   <ul>
                     <li> Designing and implementing new network solutions</li>
                     <li>
@@ -88,7 +92,7 @@ const SecendView = () => {
                     <li>Investigating faults in the network</li>
                   </ul>
                 </p>
-                <Link to="/home">
+                <Link to="./intern-job">
                   {" "}
                   <button className="btn btn-primary">Go Intern Page </button>
                 </Link>
@@ -96,13 +100,13 @@ const SecendView = () => {
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 col-sm-12 ">
-            <div class="card m-lg-5 m-md-0 m-sm-0  text-white manualStyle">
-              <h3 class="card-header">Developing C# </h3>
+          <div className="col-md-6 col-lg-4 col-sm-12 ">
+            <div className="card m-lg-5 m-md-0 m-sm-0  text-white manualStyle">
+              <h3 className="card-header">Developing C# </h3>
 
-              <div class="card-body" style={{ borderTop: "1px solid red" }}>
-                <h5 class="card-title">Our Approach To .Net</h5>
-                <p class="card-text">
+              <div className="card-body" style={{ borderTop: "1px solid red" }}>
+                <h5 className="card-title">Our Approach To .Net</h5>
+                <p className="card-text">
                   <ul>
                     <li>
                       Creating in-house applications using the .NET framework
@@ -111,16 +115,14 @@ const SecendView = () => {
                       Debugging and maintaining written code.Reporting and
                       resolving issues related
                     </li>
-                    <li>
-                      Reporting and resolving issues related to .NET projects
-                    </li>
+                   
                     <li>
                       Familiarity with Agile (Scrum) process and project
-                      management tools like JIRA and OpenProject
+                     
                     </li>
                   </ul>
                 </p>
-                <Link to="/home">
+                <Link to="./intern-job">
                   {" "}
                   <button className="btn btn-primary">Go Intern Page </button>
                 </Link>
@@ -128,12 +130,12 @@ const SecendView = () => {
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 col-sm-12">
-            <div class="card m-lg-5 m-md-0 m-sm-0  text-white manualStyle">
-              <h3 class="card-header">Web Development</h3>
-              <div class="card-body" style={{ borderTop: "1px solid red" }}>
-                <h5 class="card-title">Our Approach To Mean</h5>
-                <p class="card-text">
+          <div className="col-md-6 col-lg-4 col-sm-12">
+            <div className="card m-lg-5 m-md-0 m-sm-0  text-white manualStyle">
+              <h3 className="card-header">Web Development</h3>
+              <div className="card-body" style={{ borderTop: "1px solid red" }}>
+                <h5 className="card-title">Our Approach To Mean</h5>
+                <p className="card-text">
                   <ul>
                     <li>
                       {" "}
@@ -146,12 +148,10 @@ const SecendView = () => {
                       Familiarity with Git and design framework like MotionUI is
                       desirable.
                     </li>
-                    <li>
-                      Time-management, critical thinking
-                    </li>
+                    <li>Time-management, critical thinking</li>
                   </ul>
                 </p>
-                <Link to="/home">
+                <Link to="./intern-job">
                   {" "}
                   <button className="btn btn-primary">Go Intern Page </button>
                 </Link>
@@ -159,14 +159,14 @@ const SecendView = () => {
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 col-sm-12">
-            <div class="card m-lg-5 m-md-0 m-sm-0 text-white manualStyle">
-              <h3 class="card-header">Graphics Designer</h3>
-              <div class="card-body" style={{ borderTop: "1px solid red" }}>
-                <h5 class="card-title">
+          <div className="col-md-6 col-lg-4 col-sm-12">
+            <div className="card m-lg-5 m-md-0 m-sm-0 text-white manualStyle">
+              <h3 className="card-header">Graphics Designer</h3>
+              <div className="card-body" style={{ borderTop: "1px solid red" }}>
+                <h5 className="card-title">
                   A Graphics Designer Intern should be well-versed in
                 </h5>
-                <p class="card-text">
+                <p className="card-text">
                   <ul>
                     <li>
                       developing concepts, graphics and layouts for product
@@ -175,12 +175,11 @@ const SecendView = () => {
 
                     <li>
                       good knowledge of design software, such as Quark Xpress,
-                      InDesign or Illustrator, plus photo-editing software such
-                      as PhotoShop.
+                      InDesign or Illustrator, plus photo-editing
                     </li>
                   </ul>
                 </p>
-                <Link to="/home">
+                <Link to="./intern-job">
                   {" "}
                   <button className="btn btn-primary">Go Intern Page </button>
                 </Link>

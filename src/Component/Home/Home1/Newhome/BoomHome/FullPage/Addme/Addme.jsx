@@ -38,17 +38,17 @@ const Addme = ({ newvalue }) => {
   console.log(you_have);
   return  (
     <div>
-      {/* <section class="container">
+      {/* <section className="container">
        
         <div
           id="carouselExampleControls"
-          class="carousel slide"
+          className="carousel slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="1000">
-              <div class="row bg-dark  d-flex align-items-center text-secondary ms-5 me-5 ps-5 pe-5">
-                <div class="col-lg-7 p-5">
+          <div className="carousel-inner">
+            <div className="carousel-item active" data-bs-interval="1000">
+              <div className="row bg-dark  d-flex align-items-center text-secondary ms-5 me-5 ps-5 pe-5">
+                <div className="col-lg-7 p-5">
                   <h6 classname="mt-5">
                     “It is not that we have so little time but that we lose so
                     much. ... The life we receive is not short but we make it
@@ -57,7 +57,7 @@ const Addme = ({ newvalue }) => {
                   </h6>
                   <p>― Lucius Annaeus Seneca, On the Shortness of Life</p>
                 </div>
-                <div class="col-lg-5">
+                <div className="col-lg-5">
                   <img
                     src={backman}
                     style={{ height: "300px", width: "300px" }}
@@ -67,9 +67,9 @@ const Addme = ({ newvalue }) => {
               </div>
             </div>
 
-            <div class="carousel-item">
-              <div class="row bg-dark  d-flex align-items-center text-secondary  ms-5 me-5 ps-5 pe-5">
-                <div class="col-lg-7 p-5">
+            <div className="carousel-item">
+              <div className="row bg-dark  d-flex align-items-center text-secondary  ms-5 me-5 ps-5 pe-5">
+                <div className="col-lg-7 p-5">
                   <h6>
                     “It is the privilege of the rich To waste the time of the
                     poor To water with tears in secret A tree that grows in
@@ -80,7 +80,7 @@ const Addme = ({ newvalue }) => {
                   </h6>
                   <p>― Stevie Smith, Selected Poems</p>
                 </div>
-                <div class="col-lg-5">
+                <div className="col-lg-5">
                   <img
                     src={blackmoon}
                     style={{ height: "300px", width: "300px" }}
@@ -89,16 +89,16 @@ const Addme = ({ newvalue }) => {
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="row bg-dark d-flex align-items-center text-secondary  ms-5 me-5 ps-5 pe-5">
-                <div class="col-lg-7 p-5">
+            <div className="carousel-item">
+              <div className="row bg-dark d-flex align-items-center text-secondary  ms-5 me-5 ps-5 pe-5">
+                <div className="col-lg-7 p-5">
                   <h6>
                     “Don’t be too comfortable with employment; discover yourself
                     and see what you can achieve for yourself”
                   </h6>
                   <p>― Sunday Adelaja</p>
                 </div>
-                <div class="col-lg-5">
+                <div className="col-lg-5">
                   <img
                     src={handshake}
                     style={{ height: "300px", width: "300px" }}
@@ -110,28 +110,28 @@ const Addme = ({ newvalue }) => {
           </div>
 
           <button
-            class="carousel-control-prev"
+            className="carousel-control-prev"
             type="button"
             data-bs-target="#carouselExampleControls"
             data-bs-slide="prev"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
           </button>
           <button
-            class="carousel-control-next"
+            className="carousel-control-next"
             type="button"
             data-bs-target="#carouselExampleControls"
             data-bs-slide="next"
           >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
           </button>
         </div>
       </section> */}
 
       <br />
-       <div class="text-center pt-5 pb-5">
+       <div className="text-center pt-5 pb-5">
           {" "}
           <h1>
             <span style={{ color: "chocolate" }}>INTERN </span> Details page

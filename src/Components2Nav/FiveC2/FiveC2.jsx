@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Carousel from "react-elastic-carousel";
-import { localhost } from "../..";
+import { localhost } from "../../main.jsx";
 
 const items = [
   {

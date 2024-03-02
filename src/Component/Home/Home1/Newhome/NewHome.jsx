@@ -47,7 +47,7 @@ const NewHome = () => {
      { !loading && <div> <small>Type Job Name</small> <br /></div> }
       <input
         type="text"
-        class="form-control"
+        className="form-control"
         placeholder="searching.."
         onChange={(event) => {
           setalldata1(event.target.value);

@@ -93,7 +93,7 @@ const BoomHome = ({ valuename }) => {
 
           <div className="text-center">
             <Link to={`/fullpage/${_id}`}>
-              <button style={{ backgroundColor: "#de683a" }} class="btn btn-lg">
+              <button style={{ backgroundColor: "#de683a" }} className="btn btn-lg">
                 Click Me
               </button>
             </Link>

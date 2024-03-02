@@ -7,11 +7,10 @@ import backman from "./img/backman.jpg";
 import blackmoon from "./img/blackmoon.jpg";
 
 import handshake from "./img/handshake.jpg";
-import { localhost } from "../../../../../..";
+import { localhost } from "../../../../../../main.jsx";
 
 function FullPage() {
   const { id } = useParams();
-  console.log("id: " + localhost);
 
   
  

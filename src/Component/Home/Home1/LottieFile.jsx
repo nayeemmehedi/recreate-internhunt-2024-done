@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import lottie from 'lottie-web';
+import hire from "../../lottiefile/standboxfor hireing.json"
 
 
 function LottieFile() {
@@ -14,7 +15,7 @@ function LottieFile() {
       renderer: 'svg', // Required
       loop: true, // Optional
       autoplay: true, // Optional
-      animationData: require('../../lottiefile/standboxfor hireing.json'), // Name for future reference. Optional.
+      animationData: hire, // Name for future reference. Optional.
     })
     
   

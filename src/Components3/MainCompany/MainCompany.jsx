@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 
 import lottie from "lottie-web";
 import Lottie from "react-lottie";
-import { localhost } from "../..";
+import { localhost } from "../../main.jsx";
+import work from "./69266-work.json"
 
 const MainCompany = () => {
   let user = JSON.parse(localStorage.getItem("user"));
@@ -36,7 +37,7 @@ const MainCompany = () => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: require("./69266-work.json"),
+    animationData: work,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },

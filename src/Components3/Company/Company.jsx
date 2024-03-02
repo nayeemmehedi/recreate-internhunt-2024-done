@@ -45,7 +45,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
 import ListApprove from "../ListApprove/ListApprove";
-import { localhost } from "../..";
+import { localhost } from "../../main.jsx";
 
 const drawerWidth = 0;
 
@@ -109,7 +109,7 @@ export default function Comapany() {
   const history = useHistory();
 
   const logout2 = () => {
-    history.push("/home");
+    history.push("/intern-job");
     // window.location.reload();
   };
 

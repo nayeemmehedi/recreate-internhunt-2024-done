@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { useParams, useHistory } from "react-router";
 
 import "./style11.css";
-import { localhost } from "../../..";
+import { localhost } from "../../../main.jsx";
 
 const CompanyAdd = () => {
   const history = useHistory();

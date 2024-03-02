@@ -8,7 +8,8 @@ import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 
 import lottie from "lottie-web";
 import Lottie from "react-lottie";
-import { localhost } from "../..";
+import { localhost } from "../../main.jsx";
+import greetings from "./32000-congratulation-greetings.json"
 
 const HireU = () => {
   const [student, setStudent] = useState([]);
@@ -27,7 +28,7 @@ const HireU = () => {
     loop: true,
     autoplay: true,
 
-    animationData: require("./32000-congratulation-greetings.json"),
+    animationData: greetings,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
@@ -56,12 +57,12 @@ const HireU = () => {
         {student.length > 0 ? (
           student.map((v) => (
             <div className="col-5 m-5">
-              <div class="card">
-                <small class="card-header">
+              <div className="card">
+                <small className="card-header">
                   You are passed primary selection...
                 </small>
-                <div class="card-body">
-                  <h4 class="card-title">
+                <div className="card-body">
+                  <h4 className="card-title">
                     Company name :{" "}
                     <span style={{ color: "blue" }}>{v.companyname}</span>
                   </h4>
@@ -69,7 +70,7 @@ const HireU = () => {
                     company email :{" "}
                     <span style={{ color: "blue" }}>{v.companymail}</span>
                   </h6>
-                  <p class="card-text">
+                  <p className="card-text">
                     <p></p>
                   </p>
                 </div>
