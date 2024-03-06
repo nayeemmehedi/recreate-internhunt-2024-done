@@ -1,30 +1,18 @@
 import React, { useState, useEffect } from "react";
-import TextField from "@material-ui/core/TextField";
-import { makeStyles } from "@material-ui/core/styles";
 
 import BoomHome from "./BoomHome/BoomHome";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    "& .MuiTextField-root": {
-      margin: theme.spacing(1),
-      width: "25ch",
-    },
-  },
-}));
-
 const NewHome = () => {
-  const [loading,setLoading] = useState(false)
-  const classes = useStyles();
+  const [loading, setLoading] = useState(false);
   const [alldata, setalldata] = useState([]);
   useEffect(() => {
-    setLoading(true)
+    setLoading(true);
     fetch("https://internhunt-24.onrender.com/event")
       .then((res) => res.json())
       .then((data) => {
-        console.log("sata",data)
-        setalldata(data)
-        setLoading(false)
+        console.log("sata", data);
+        setalldata(data);
+        setLoading(false);
       });
   }, []);
   const [alldata1, setalldata1] = useState("");
@@ -38,13 +26,18 @@ const NewHome = () => {
 
   shuffle(alldata);
 
-  if(loading){
-    return <div>Loading...</div>
+  if (loading) {
+    return <div>Loading...</div>;
   }
 
   return (
     <div>
-     { !loading && <div> <small>Type Job Name</small> <br /></div> }
+      {!loading && (
+        <div>
+          {" "}
+          <small>Type Job Name</small> <br />
+        </div>
+      )}
       <input
         type="text"
         className="form-control"

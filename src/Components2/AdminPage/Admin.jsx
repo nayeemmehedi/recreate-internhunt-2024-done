@@ -31,7 +31,7 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText,
-  Container,
+  Container
 } from "@material-ui/core";
 import HomeIcon from "@material-ui/icons/Home";
 

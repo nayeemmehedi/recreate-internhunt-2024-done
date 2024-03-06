@@ -8,6 +8,8 @@ import { faFeatherAlt } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
   let user = JSON.parse(localStorage.getItem("user"));
 
+
+
   const history = useHistory();
 
   const logout = () => {
@@ -79,7 +81,11 @@ const Navbar = () => {
               </li>
 
               <li className="nav-item me-5">
-                <Link className="nav-link active" aria-current="page" to="./intern-job">
+                <Link
+                  className="nav-link active"
+                  aria-current="page"
+                  to="./intern-job"
+                >
                   Intern
                 </Link>
               </li>
@@ -88,19 +94,27 @@ const Navbar = () => {
                 <Link
                   className="nav-link active"
                   aria-current="page"
-                  to="./carduser"
+                  to="./card-applied-company"
                 >
                   Card
                 </Link>
               </li>
 
               <li className="nav-item me-5">
-                <Link className="nav-link active" aria-current="page" to="./review">
+                <Link
+                  className="nav-link active"
+                  aria-current="page"
+                  to="./review"
+                >
                   review
                 </Link>
               </li>
               <li className="nav-item me-5">
-                <Link className="nav-link active" aria-current="page" to="./hire">
+                <Link
+                  className="nav-link active"
+                  aria-current="page"
+                  to="./hire"
+                >
                   Hire you
                 </Link>
               </li>
@@ -109,16 +123,24 @@ const Navbar = () => {
                 <a
                   className="nav-link active"
                   aria-current="page"
-                  href="./company/nayeem"
+                  href="./company/hunt"
                 >
                   <button className="btn btn-primary">Company</button>
                 </a>
               </li>
-              <li className="nav-item me-5">
-                <a className="nav-link active" aria-current="page" href="./admin">
-                  <button className="btn btn-info">Admin</button>
-                </a>
-              </li>
+              { user?.email == "nayeemmehedi@gmail.com" ? (
+                <li className="nav-item me-5">
+                  <a
+                    className="nav-link active"
+                    aria-current="page"
+                    href="./admin"
+                  >
+                    <button className="btn btn-info">Admin</button>
+                  </a>
+                </li>
+              ) : (
+                ""
+              )}
 
               {localStorage.getItem("user") ? (
                 <div className="dropdown">
@@ -144,7 +166,19 @@ const Navbar = () => {
                     </li>
                   </ul>
                 </div>
-              ) : null}
+              ) : (
+                <div>
+                  <li className="nav-item ">
+                    <a
+                      className="nav-link active"
+                      aria-current="page"
+                      href="./login"
+                    >
+                      <button className="btn btn-primary">Intern Login</button>
+                    </a>
+                  </li>
+                </div>
+              )}
             </ul>
           </div>
         </div>

@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route,Redirect } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import Navbar from "./Component/Navbar/Navbar.jsx";
 
 import Home from "./Component/Home/Home1/Home.jsx";
@@ -24,6 +29,9 @@ import ApproveCV from "./Components3/ApproveCV/ApproveCV.jsx";
 import HireU from "./Components7last/HireU/HireU.jsx";
 
 function App() {
+  let user = JSON.parse(localStorage.getItem("user"));
+  
+
   return (
     <Router>
       <Navbar />
@@ -51,7 +59,7 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <NewPrivateRouter path="/company/nayeem">
+          <NewPrivateRouter path="/company/hunt">
             <Company />
           </NewPrivateRouter>
           <NewPrivateRouter path="/approve">
@@ -60,7 +68,7 @@ function App() {
           <Route path="/company">
             <Company />
           </Route>
-          <PrivateRoute path="/carduser">
+          <PrivateRoute path="/card-applied-company">
             <CardUser />
           </PrivateRoute>
           <PrivateRoute path="/hire">
@@ -78,9 +86,15 @@ function App() {
           <Route path="/companylogin">
             <CompanyLogin />
           </Route>
-          <Route path="/admin">
-            <Admin />
-          </Route>
+          {user?.email ? (
+            <Route path="/admin">
+              <Admin />
+            </Route>
+          ) : (
+            <Route path="/">
+              <FirstPage />
+            </Route>
+          )}
           <Route path="*">
             <NotFound />
           </Route>

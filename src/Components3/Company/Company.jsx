@@ -30,7 +30,7 @@ import {
   ListItemText,
   Container,
 } from "@material-ui/core";
-import HomeIcon from "@material-ui/icons/Home";
+// import HomeIcon from "@material-ui/icons/Home";
 import DeleteCv from "../deleteCV/DeleteCv";
 import Jobpost from "../../Components2/AdminPage/NewFileAdmin/Event";
 import Showcv from "../ShowCV/Showcv";
@@ -43,7 +43,7 @@ import fakegmail from "../../Component/Fakedata/emailfake.json";
 import { useHistory } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
+// import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
 import ListApprove from "../ListApprove/ListApprove";
 import { localhost } from "../../main.jsx";
 

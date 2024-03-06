@@ -1,23 +1,19 @@
 import React from "react";
-import backman from "../img/backman.jpg";
-import blackmoon from "../img/blackmoon.jpg";
-import handshake from "../img/handshake.jpg";
+
 import svg from "../Addme/svg.jpg";
-import AccountBalanceIcon from "@material-ui/icons/AccountBalance";
-import FormatAlignLeftIcon from "@material-ui/icons/FormatAlignLeft";
-import WorkIcon from "@material-ui/icons/Work";
-import StarIcon from "@material-ui/icons/Star";
-import SettingsInputAntennaIcon from "@material-ui/icons/SettingsInputAntenna";
-import PowerSettingsNewIcon from "@material-ui/icons/PowerSettingsNew";
-import WrapTextIcon from "@material-ui/icons/WrapText";
-import SportsHockeyIcon from "@material-ui/icons/SportsHockey";
-import SpeakerPhoneIcon from "@material-ui/icons/SpeakerPhone";
-import LocalBarIcon from "@material-ui/icons/LocalBar";
-import DonutSmallIcon from "@material-ui/icons/DonutSmall";
-import PlaceIcon from "@material-ui/icons/Place";
-import DateRangeIcon from "@material-ui/icons/DateRange";
-import BarChartRoundedIcon from "@material-ui/icons/BarChartRounded";
-import {Link} from "react-router-dom";
+import FormatAlignLeftIcon from "@mui/icons-material/FormatAlignLeft";
+
+import SettingsInputAntennaIcon from "@mui/icons-material/SettingsInputAntenna";
+import PowerSettingsNewIcon from "@mui/icons-material/PowerSettingsNew";
+import WrapTextIcon from "@mui/icons-material/WrapText";
+import SportsHockeyIcon from "@mui/icons-material/SportsHockey";
+import SpeakerPhoneIcon from "@mui/icons-material/SpeakerPhone";
+import LocalBarIcon from "@mui/icons-material/LocalBar";
+import DonutSmallIcon from "@mui/icons-material/DonutSmall";
+import PlaceIcon from "@mui/icons-material/Place";
+import DateRangeIcon from "@mui/icons-material/DateRange";
+import BarChartRoundedIcon from "@mui/icons-material/BarChartRounded";
+import { Link } from "react-router-dom";
 import "./Addme.css";
 const Addme = ({ newvalue }) => {
   const {
@@ -36,7 +32,7 @@ const Addme = ({ newvalue }) => {
     you_have,
   } = newvalue;
   console.log(you_have);
-  return  (
+  return (
     <div>
       {/* <section className="container">
        
@@ -131,12 +127,12 @@ const Addme = ({ newvalue }) => {
       </section> */}
 
       <br />
-       <div className="text-center pt-5 pb-5">
-          {" "}
-          <h1>
-            <span style={{ color: "chocolate" }}>INTERN </span> Details page
-          </h1>
-        </div>
+      <div className="text-center pt-5 pb-5">
+        {" "}
+        <h1>
+          <span style={{ color: "chocolate" }}>INTERN </span> Details page
+        </h1>
+      </div>
 
       <div className="row">
         <div className="col-2"></div>
@@ -152,7 +148,8 @@ const Addme = ({ newvalue }) => {
           <h4> Fresher Job</h4>
           <h4>
             {" "}
-            <AccountBalanceIcon style={{ color: "#67c1c7" }} /> {job_tital}
+            {/* <AccountBalanceIcon style={{ color: "#67c1c7" }} /> */}
+            {job_tital}
           </h4>
           <h5 className="ps-3">
             {" "}
@@ -170,16 +167,12 @@ const Addme = ({ newvalue }) => {
             Infinity Business Solutions
           </h4>
           <p className="ps-2">Description:</p>
-          <p className="ps-5">
-            {company_description}
-          </p>
+          <p className="ps-5">{company_description}</p>
           <h3>
             <WrapTextIcon style={{ color: "#67c1c7" }} /> About the job
           </h3>
           <h6 className="ps-4">key responsibilities</h6>
-          <p className="ps-5">
-           {your_role}
-          </p>
+          <p className="ps-5">{your_role}</p>
           <h3>
             <SpeakerPhoneIcon style={{ color: "#67c1c7" }} /> Skill(s) required
           </h3>
@@ -187,36 +180,18 @@ const Addme = ({ newvalue }) => {
           <h4>
             <SportsHockeyIcon style={{ color: "#67c1c7" }} /> Who can apply
           </h4>
-          <p className="ps-5"> 
-
-          <div>{
-            you_have ?  you_have.map(value=> 
-
-              
-               <>
-                  
-                  <p> {value.basic}</p>
-                  <p>{value.must}</p>
-                  <p>{value.familiarity}</p>
-
-                  
-                 
-              
-               
-               </>
-              
-              
-              ) : null
-        
-        
-        
-       
-          
-                 }
-          
-          
-          </div>
-           
+          <p className="ps-5">
+            <div>
+              {you_have
+                ? you_have.map((value) => (
+                    <>
+                      <p> {value.basic}</p>
+                      <p>{value.must}</p>
+                      <p>{value.familiarity}</p>
+                    </>
+                  ))
+                : null}
+            </div>
           </p>
           <h3 className="ps-2">
             <LocalBarIcon style={{ color: "#67c1c7" }} /> Educational
@@ -240,10 +215,7 @@ const Addme = ({ newvalue }) => {
           </h3>
           <h6 className="ps-2"> Probation: </h6>
           <p className="ps-2"> Duration: 3 months </p>
-          <p className="ps-2">
-            {" "}
-            Salary during probation: {money}
-          </p>
+          <p className="ps-2"> Salary during probation: {money}</p>
           <h3 className="ps-2">
             <PlaceIcon style={{ color: "#67c1c7" }} /> city
           </h3>
@@ -253,9 +225,10 @@ const Addme = ({ newvalue }) => {
           </h3>
           <p className="ps-3"> {datetime}</p>
           <div className="text-center nayeem">
-
-          <Link to={`/FormCV/${_id}`}> <button className="button">Go to from page</button></Link>
-            
+            <Link to={`/FormCV/${_id}`}>
+              {" "}
+              <button className="button">Go to from page</button>
+            </Link>
           </div>
         </div>
         <div className="col-3 ms-5 pt-5">
