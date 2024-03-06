@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router";
-import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
+import DeleteForeverIcon from " @material-ui/icons/DeleteForever";
 import { localhost } from "../../../main.jsx";
+
+// @material-ui/icons 
 
 const Delete = () => {
   const history = useHistory();

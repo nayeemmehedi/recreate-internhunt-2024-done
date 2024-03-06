@@ -1,18 +1,18 @@
 import React from "react";
 
 import svg from "../Addme/svg.jpg";
-import FormatAlignLeftIcon from "@mui/icons-material/FormatAlignLeft";
+import FormatAlignLeftIcon from " @material-ui/icons/FormatAlignLeft";
 
-import SettingsInputAntennaIcon from "@mui/icons-material/SettingsInputAntenna";
-import PowerSettingsNewIcon from "@mui/icons-material/PowerSettingsNew";
-import WrapTextIcon from "@mui/icons-material/WrapText";
-import SportsHockeyIcon from "@mui/icons-material/SportsHockey";
-import SpeakerPhoneIcon from "@mui/icons-material/SpeakerPhone";
-import LocalBarIcon from "@mui/icons-material/LocalBar";
-import DonutSmallIcon from "@mui/icons-material/DonutSmall";
-import PlaceIcon from "@mui/icons-material/Place";
-import DateRangeIcon from "@mui/icons-material/DateRange";
-import BarChartRoundedIcon from "@mui/icons-material/BarChartRounded";
+import SettingsInputAntennaIcon from " @material-ui/icons/SettingsInputAntenna";
+import PowerSettingsNewIcon from " @material-ui/icons/PowerSettingsNew";
+import WrapTextIcon from " @material-ui/icons/WrapText";
+import SportsHockeyIcon from " @material-ui/icons/SportsHockey";
+import SpeakerPhoneIcon from " @material-ui/icons/SpeakerPhone";
+import LocalBarIcon from " @material-ui/icons/LocalBar";
+import DonutSmallIcon from " @material-ui/icons/DonutSmall";
+import PlaceIcon from " @material-ui/icons/Place";
+import DateRangeIcon from " @material-ui/icons/DateRange";
+import BarChartRoundedIcon from " @material-ui/icons/BarChartRounded";
 import { Link } from "react-router-dom";
 import "./Addme.css";
 const Addme = ({ newvalue }) => {
