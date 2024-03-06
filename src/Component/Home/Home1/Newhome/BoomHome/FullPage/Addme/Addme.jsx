@@ -14,7 +14,7 @@ import PlaceIcon from "@material-ui/icons/Place";
 import DateRangeIcon from "@material-ui/icons/DateRange";
 import BarChartRoundedIcon from "@material-ui/icons/BarChartRounded";
 import { Link } from "react-router-dom";
-import "./Addme.css";
+import "./Addme.css"
 const Addme = ({ newvalue }) => {
   const {
     _id,
