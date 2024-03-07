@@ -1,266 +1,239 @@
-import React from "react";
-import clsx from "clsx";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+// import React from "react";
+// import clsx from "clsx";
+// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// ///folder react 
+// import Event from "./NewFileAdmin/Event";
+// import DeleteForm from "./NewFileAdmin/DeleteForm";
+// import Main from "./NewFileAdmin/Main";
+// import Delete from "./NewFileAdmin/Delete";
+// import CompanyAdd from './NewFileAdmin/CompanyAdd'
 
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
+// //icon mui v5
+// import MenuIcon from "@mui/icons-material/Menu";
+// import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+// import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+// import DeleteSweepIcon from "@mui/icons-material/DeleteSweep";
+// import DeleteIcon from "@mui/icons-material/Delete";
+// import MailIcon from "@mui/icons-material/Mail";
+// import HomeIcon from "@mui/icons-material/Home";
+// //v4 prblm
 
-import CssBaseline from "@material-ui/core/CssBaseline";
-import Typography from "@material-ui/core/Typography";
-import Divider from "@material-ui/core/Divider";
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
-import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
+// import MuiAppBar from '@mui/material/AppBar';
+// import { styled, useTheme } from '@mui/material/styles';
+// import CssBaseline from '@mui/material/CssBaseline';
+// import Drawer from '@mui/material/Drawer';
+// import List from '@mui/material/List';
+// import ListItem from '@mui/material/ListItem';
+// import ListItemIcon from '@mui/material/ListItemIcon';
+// import ListItemText from '@mui/material/ListItemText';
+// import Container from '@mui/material/Container';
+// import Toolbar from '@mui/material/Toolbar';
+// import Typography from '@mui/material/Typography';
+// import IconButton from '@mui/material/IconButton';
 
-import InboxIcon from "@material-ui/icons/MoveToInbox";
-import MailIcon from "@material-ui/icons/Mail";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Event from "./NewFileAdmin/Event";
-import DeleteForm from "./NewFileAdmin/DeleteForm";
-import Main from "./NewFileAdmin/Main";
-import Delete from "./NewFileAdmin/Delete";
-import DeleteSweepIcon from "@material-ui/icons/DeleteSweep";
-import DeleteIcon from "@material-ui/icons/Delete";
-import CompanyAdd from './NewFileAdmin/CompanyAdd'
 
-import { createTheme } from "@material-ui/core/styles";
-import {
-  Drawer,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-  Container
-} from "@material-ui/core";
-import HomeIcon from "@material-ui/icons/Home";
+// const drawerWidth = 240;
 
-const drawerWidth = 240;
+// const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
+//   ({ theme, open }) => ({
+//     flexGrow: 1,
+//     padding: theme.spacing(3),
+//     transition: theme.transitions.create('margin', {
+//       easing: theme.transitions.easing.sharp,
+//       duration: theme.transitions.duration.leavingScreen,
+//     }),
+//     marginLeft: `-${drawerWidth}px`,
+//     ...(open && {
+//       transition: theme.transitions.create('margin', {
+//         easing: theme.transitions.easing.easeOut,
+//         duration: theme.transitions.duration.enteringScreen,
+//       }),
+//       marginLeft: 0,
+//     }),
+//   }),
+// );
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: "flex",
-  },
+// const AppBar = styled(MuiAppBar, {
+//   shouldForwardProp: (prop) => prop !== 'open',
+// })(({ theme, open }) => ({
+//   transition: theme.transitions.create(['margin', 'width'], {
+//     easing: theme.transitions.easing.sharp,
+//     duration: theme.transitions.duration.leavingScreen,
+//   }),
+//   ...(open && {
+//     width: `calc(100% - ${drawerWidth}px)`,
+//     marginLeft: `${drawerWidth}px`,
+//     transition: theme.transitions.create(['margin', 'width'], {
+//       easing: theme.transitions.easing.easeOut,
+//       duration: theme.transitions.duration.enteringScreen,
+//     }),
+//   }),
+// }));
 
-  appBar: {
-    zIndex: theme.zIndex.drawer + 1,
-    transition: theme.transitions.create(["width", "margin"], {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
-    }),
-  },
+// const DrawerHeader = styled('div')(({ theme }) => ({
+//   display: 'flex',
+//   alignItems: 'center',
+//   padding: theme.spacing(0, 1),
+//   // necessary for content to be below app bar
+//   ...theme.mixins.toolbar,
+//   justifyContent: 'flex-end',
+// }));
 
-  link: {
-    textDecoration: "none",
-    color: "theme.platte.text.primary",
-  },
 
-  appBarShift: {
-    width: `calc(100% - ${drawerWidth}px)`,
-    transition: theme.transitions.create(["width", "margin"], {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
-  },
-  menuButton: {
-    marginRight: 36,
-  },
-  hide: {
-    display: "none",
-  },
-  drawer: {
-    width: drawerWidth,
-    flexShrink: 0,
-    whiteSpace: "nowrap",
-  },
-  drawerOpen: {
-    width: drawerWidth,
-    transition: theme.transitions.create("width", {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
-  },
-  drawerClose: {
-    transition: theme.transitions.create("width", {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
-    }),
-    overflowX: "hidden",
-    width: theme.spacing(7) + 1,
-    [theme.breakpoints.up("sm")]: {
-      width: theme.spacing(9) + 1,
-    },
-  },
-  toolbar: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "flex-end",
-    padding: theme.spacing(0, 1),
-    // necessary for content to be below app bar
-    ...theme.mixins.toolbar,
-  },
-  content: {
-    flexGrow: 1,
-    padding: theme.spacing(3),
-  },
-}));
 
-export default function Admin() {
-  const classes = useStyles();
-  const theme = useTheme();
-  const [open, setOpen] = React.useState(false);
 
-  const handleDrawerOpen = () => {
-    setOpen(true);
-  };
 
-  const handleDrawerClose = () => {
-    setOpen(false);
-  };
+// export default function Admin() {
+//   const theme = useTheme();
+//   const [open, setOpen] = React.useState(false);
 
+//   const handleDrawerOpen = () => {
+//     setOpen(true);
+//   };
+
+//   const handleDrawerClose = () => {
+//     setOpen(false);
+//   };
+
+//   return (
+//     <Router>
+//       <Box sx={{ display: 'flex' }}>
+//         <CssBaseline />
+//         <AppBar
+//          position="fixed" open={open}
+//         >
+//           <Toolbar>
+//             <IconButton
+//               color="inherit"
+//               aria-label="open drawer"
+//               onClick={handleDrawerOpen}
+//               edge="start"
+//               sx={{ mr: 2, ...(open && { display: 'none' }) }}
+//             >
+//               <MenuIcon />
+//             </IconButton>
+//             <Typography variant="h4" noWrap>
+//               Admin Page
+//             </Typography>
+//           </Toolbar>
+//         </AppBar>
+//         <Drawer
+//           variant="permanent"
+         
+//         >
+//           <div>
+//             <IconButton onClick={handleDrawerClose}>
+//               {theme.direction === "rtl" ? (
+//                 <ChevronRightIcon />
+//               ) : (
+//                 <ChevronLeftIcon />
+//               )}
+//             </IconButton>
+//           </div>
+//           <Divider />
+
+//           <List>
+//             <Link to="/admin" >
+//               <ListItem >
+//                 <ListItemIcon>
+//                   <HomeIcon style={{ color: "#260f33" }}></HomeIcon>
+//                 </ListItemIcon>
+
+//                 <ListItemText primary={"Home"} style={{ color: "#260f33" }} />
+//               </ListItem>
+//             </Link>
+
+//             <Link to="/event" className={classes.link}>
+//               <ListItem button>
+//                 <ListItemIcon>
+//                   <MailIcon style={{ color: "#260f33" }}></MailIcon>
+//                 </ListItemIcon>
+
+//                 <ListItemText primary={"Event"} style={{ color: "#260f33" }} />
+//               </ListItem>
+//             </Link>
+
+//             <Link to="/companyadd" className={classes.link}>
+//               <ListItem button>
+//                 <ListItemIcon>
+//                   <MailIcon style={{ color: "#260f33" }}></MailIcon>
+//                 </ListItemIcon>
+
+//                 <ListItemText primary={"Company Add"} style={{ color: "#260f33" }} />
+//               </ListItem>
+//             </Link>
+
+
+//             <Link to="/deleteform" className={classes.link}>
+//               <ListItem button>
+//                 <ListItemIcon>
+//                   <DeleteIcon style={{ color: "#260f33" }} />
+//                 </ListItemIcon>
+
+//                 <ListItemText
+//                   primary={"DeleteForm"}
+//                   style={{ color: "#260f33", fontFamily: "Roboto Slab" }}
+//                 />
+//               </ListItem>
+//             </Link>
+
+//             <Link to="/delete" className={classes.link}>
+//               <ListItem button>
+//                 <ListItemIcon>
+//                   <DeleteSweepIcon style={{ color: "#260f33" }} />
+//                 </ListItemIcon>
+
+//                 <ListItemText
+//                   primary={"Delete Job"}
+//                   style={{ color: "#260f33" }}
+//                 />
+//               </ListItem>
+//             </Link>
+//           </List>
+//         </Drawer>
+
+//         <Switch>
+//           <Route exact path="/event">
+//             <Container>
+//               <Event />
+//             </Container>
+//           </Route>
+
+//           <Route exact path="/admin">
+//             <Container>
+//               <Main></Main>
+//             </Container>
+//           </Route>
+
+//           <Route exact path="/delete">
+//             <Container>
+//               <Delete></Delete>
+//             </Container>
+//           </Route>
+
+//           <Route exact path="/companyadd">
+//             <Container>
+//               <CompanyAdd></CompanyAdd>
+//             </Container>
+//           </Route>
+
+//           <Route exact path="/deleteform">
+//             <Container>
+//               <DeleteForm></DeleteForm> 
+//             </Container>
+//           </Route>
+//         </Switch>
+//       </Box>
+//     </Router>
+//   );
+// }
+
+import React from 'react'
+
+function Admin() {
   return (
-    <Router>
-      <div className={classes.root}>
-        <CssBaseline />
-        <AppBar
-          position="fixed"
-          className={clsx(classes.appBar, {
-            [classes.appBarShift]: open,
-          })}
-        >
-          <Toolbar>
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              onClick={handleDrawerOpen}
-              edge="start"
-              className={clsx(classes.menuButton, {
-                [classes.hide]: open,
-              })}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Typography variant="h4" noWrap>
-              Admin Page
-            </Typography>
-          </Toolbar>
-        </AppBar>
-        <Drawer
-          variant="permanent"
-          className={clsx(classes.drawer, {
-            [classes.drawerOpen]: open,
-            [classes.drawerClose]: !open,
-          })}
-          classes={{
-            paper: clsx({
-              [classes.drawerOpen]: open,
-              [classes.drawerClose]: !open,
-            }),
-          }}
-        >
-          <div className={classes.toolbar}>
-            <IconButton onClick={handleDrawerClose}>
-              {theme.direction === "rtl" ? (
-                <ChevronRightIcon />
-              ) : (
-                <ChevronLeftIcon />
-              )}
-            </IconButton>
-          </div>
-          <Divider />
-
-          <List>
-            <Link to="/admin" className={classes.link}>
-              <ListItem button>
-                <ListItemIcon>
-                  <HomeIcon style={{ color: "#260f33" }}></HomeIcon>
-                </ListItemIcon>
-
-                <ListItemText primary={"Home"} style={{ color: "#260f33" }} />
-              </ListItem>
-            </Link>
-
-            <Link to="/event" className={classes.link}>
-              <ListItem button>
-                <ListItemIcon>
-                  <MailIcon style={{ color: "#260f33" }}></MailIcon>
-                </ListItemIcon>
-
-                <ListItemText primary={"Event"} style={{ color: "#260f33" }} />
-              </ListItem>
-            </Link>
-
-            <Link to="/companyadd" className={classes.link}>
-              <ListItem button>
-                <ListItemIcon>
-                  <MailIcon style={{ color: "#260f33" }}></MailIcon>
-                </ListItemIcon>
-
-                <ListItemText primary={"Company Add"} style={{ color: "#260f33" }} />
-              </ListItem>
-            </Link>
-
-
-            <Link to="/deleteform" className={classes.link}>
-              <ListItem button>
-                <ListItemIcon>
-                  <DeleteIcon style={{ color: "#260f33" }} />
-                </ListItemIcon>
-
-                <ListItemText
-                  primary={"DeleteForm"}
-                  style={{ color: "#260f33", fontFamily: "Roboto Slab" }}
-                />
-              </ListItem>
-            </Link>
-
-            <Link to="/delete" className={classes.link}>
-              <ListItem button>
-                <ListItemIcon>
-                  <DeleteSweepIcon style={{ color: "#260f33" }} />
-                </ListItemIcon>
-
-                <ListItemText
-                  primary={"Delete Job"}
-                  style={{ color: "#260f33" }}
-                />
-              </ListItem>
-            </Link>
-          </List>
-        </Drawer>
-
-        <Switch>
-          <Route exact path="/event">
-            <Container>
-              <Event />
-            </Container>
-          </Route>
-
-          <Route exact path="/admin">
-            <Container>
-              <Main></Main>
-            </Container>
-          </Route>
-
-          <Route exact path="/delete">
-            <Container>
-              <Delete></Delete>
-            </Container>
-          </Route>
-
-          <Route exact path="/companyadd">
-            <Container>
-              <CompanyAdd></CompanyAdd>
-            </Container>
-          </Route>
-
-          <Route exact path="/deleteform">
-            <Container>
-              <DeleteForm></DeleteForm> 
-            </Container>
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-  );
+    <div>Admin</div>
+  )
 }
+
+export default Admin
