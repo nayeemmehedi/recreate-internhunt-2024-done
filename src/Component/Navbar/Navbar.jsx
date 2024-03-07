@@ -120,23 +120,23 @@ const Navbar = () => {
               </li>
 
               <li className="nav-item ">
-                <a
+                <Link
                   className="nav-link active"
                   aria-current="page"
-                  href="./company/hunt"
+                  to="./company/hunt"
                 >
                   <button className="btn btn-primary">Company</button>
-                </a>
+                </Link>
               </li>
               { user?.email == "nayeemmehedi@gmail.com" ? (
                 <li className="nav-item me-5">
-                  <a
+                  <Link
                     className="nav-link active"
                     aria-current="page"
-                    href="./admin"
+                    to="./admin"
                   >
                     <button className="btn btn-info">Admin</button>
-                  </a>
+                  </Link>
                 </li>
               ) : (
                 ""
@@ -169,13 +169,13 @@ const Navbar = () => {
               ) : (
                 <div>
                   <li className="nav-item ">
-                    <a
+                    <Link
                       className="nav-link active"
                       aria-current="page"
-                      href="./login"
+                      to="./login"
                     >
                       <button className="btn btn-primary">Intern Login</button>
-                    </a>
+                    </Link>
                   </li>
                 </div>
               )}

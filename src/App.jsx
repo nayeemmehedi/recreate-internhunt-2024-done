@@ -30,7 +30,6 @@ import HireU from "./Components7last/HireU/HireU.jsx";
 
 function App() {
   let user = JSON.parse(localStorage.getItem("user"));
-  
 
   return (
     <Router>
